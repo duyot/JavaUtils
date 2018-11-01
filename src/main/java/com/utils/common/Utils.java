@@ -1,7 +1,5 @@
 package com.utils.common;
 
-import com.smsmkt.dto.RPLY;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -10,14 +8,6 @@ import java.util.Scanner;
 
 public class Utils {
 
-    public static RPLY getReplyFromResult(RPLY rply, String result){
-        //
-        String [] resultArr = result.split("\\|");
-        rply.setSTATUS(resultArr[0]);
-        rply.setMT_COUNT(resultArr[1]);
-        //
-        return rply;
-    }
 
     public static String getPostRequestBody(HttpServletRequest request){
         if (!"POST".equalsIgnoreCase(request.getMethod())) {

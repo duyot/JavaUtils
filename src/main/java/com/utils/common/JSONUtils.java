@@ -1,8 +1,6 @@
 package com.utils.common;
 
 import com.google.gson.Gson;
-import com.smsmkt.dto.GetSmsStatusRequestDTO;
-import com.smsmkt.dto.RQST;
 
 /**
  * Created by duyot on 7/7/2016.
@@ -19,10 +17,6 @@ public class JSONUtils {
     }
 
     public static void main(String[] args) {
-        RQST a = new RQST();
-        a.setName("abc");
-        a.setMSISDN("abc");
-        System.out.println(JSONUtils.object2JSONString(new GetSmsStatusRequestDTO(a)));
     }
 
 }

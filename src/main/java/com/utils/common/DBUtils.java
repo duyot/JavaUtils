@@ -1,6 +1,5 @@
 package com.utils.common;
 
-import com.smsmkt.workers.MNPSynJob;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.pool.HikariPool;
 import org.slf4j.Logger;
@@ -15,7 +14,7 @@ import java.sql.SQLException;
  */
 public class DBUtils {
     private static HikariPool pool = null;
-    public static Logger log = LoggerFactory.getLogger(MNPSynJob.class);
+    public static Logger log = LoggerFactory.getLogger(DBUtils.class);
 
     public static HikariPool getDataSource() {
         return pool;
