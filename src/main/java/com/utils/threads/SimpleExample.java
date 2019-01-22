@@ -47,7 +47,7 @@ class ListProcessThread extends Thread {
         int totalItem = items.size();
         int modArr = 0;
         if (number < totalThread - 1) {
-            modArr = (int) (totalItem / totalThread);
+            modArr = totalItem / totalThread;
             start = number * modArr + 1;
             end = number * modArr + modArr;
         } else {
